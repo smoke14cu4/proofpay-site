@@ -3,7 +3,9 @@ name: Scheduled Curl Request
 on:
   schedule:    
     # Runs every 10 minutes, but offset by 3 minutes to avoid the global queue
-    - cron: '3,13,23,33,43,53 * * * *'
+    #- cron: '3,13,23,33,43,53 * * * *'
+    # runs every 12 minutes
+    - cron: '1,13,25,37,49 * * * *'
   
   # Optional: Allows you to trigger the workflow manually from the GitHub UI
   workflow_dispatch: 
